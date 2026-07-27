@@ -267,6 +267,49 @@
     border-radius: 16px;
     object-fit: cover;
   }
+  /* ── PROMO TREINAMENTO ── */
+  .promo-treinamento-section {
+    background: var(--white);
+    padding: 70px 40px;
+    text-align: center;
+  }
+  .promo-treinamento-badge {
+    display: inline-block;
+    background: rgba(240,90,0,0.1);
+    color: var(--brand);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  .promo-treinamento-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(24px, 3.2vw, 38px);
+    font-weight: 900;
+    color: var(--ink);
+    line-height: 1.15;
+    max-width: 760px;
+    margin: 0 auto 14px;
+  }
+  .promo-treinamento-section h2 em { font-style: normal; color: var(--brand); }
+  .promo-treinamento-section .lead {
+    font-size: 16px;
+    color: var(--gray-text);
+    max-width: 560px;
+    margin: 0 auto 36px;
+    line-height: 1.6;
+  }
+  .promo-treinamento-section img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+  }
+  .promo-treinamento-section .btn-primary { margin-top: 32px; }
   /* ── DOR SECTION ── */
   .pain-section {
     background: var(--gray-light);
@@ -311,7 +354,7 @@
     border-radius: 10px;
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 14px;
-    font-size: 22px;
+    color: var(--red);
   }
   .pain-card h3 {
     font-family: 'Montserrat', sans-serif;
@@ -334,7 +377,7 @@
     gap: 32px;
     text-align: left;
   }
-  .pain-solution-icon { font-size: 48px; flex-shrink: 0; }
+  .pain-solution-icon { flex-shrink: 0; color: #fff; display: flex; }
   .pain-solution h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -424,6 +467,19 @@
     border-radius: 6px;
     padding: 4px 10px;
   }
+  .product-icon-wrap {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, rgba(240,90,0,0.14), rgba(240,90,0,0.04));
+    border: 1px solid rgba(240,90,0,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand);
+    transition: transform 0.3s;
+  }
+  .product-card:hover .product-icon-wrap { transform: scale(1.05); }
   .product-body {
     padding: 20px;
     flex: 1;
@@ -524,7 +580,7 @@
     transition: border-color 0.2s;
   }
   .garantia-card:hover { border-color: var(--brand); }
-  .garantia-icon { font-size: 36px; margin-bottom: 12px; }
+  .garantia-icon { margin-bottom: 12px; color: var(--brand); display: flex; justify-content: center; }
   .garantia-card h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -675,7 +731,7 @@
       <div class="hero-eyebrow">Distribuidor Oficial Autel em Curitiba/PR</div>
       <h1>Sua oficina está pronta para <em>não perder nenhum cliente?</em></h1>
       <p class="hero-sub">
-        Garanta seu equipamento <strong>Autel</strong> com até <strong>12x sem juros no cartão</strong>, 3 anos de atualizações inclusas e 1 ano de garantia.
+        Garanta seu equipamento <strong>Autel</strong> com até <strong>12x sem juros no cartão</strong> e 1 ano de garantia.
       </p>
       <div class="hero-actions">
         <a href="#produtos" class="btn-primary">
@@ -698,16 +754,30 @@
         </div>
         <div class="hero-trust-item">
           <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          +7 anos no mercado
+          +9 anos no mercado
         </div>
       </div>
     </div>
     <div class="hero-visual">
       <div class="hero-garantia-banner">
-        <p>⚡ Atualização do equipamento <em>gratuita por 3 anos</em><br>e <em>garantia de um ano</em> inclusa!</p>
+        <p>⚡ <em>Garantia de um ano</em> inclusa!</p>
       </div>
       <img src="./ms909-s2.png" alt="Equipamentos Autel" />
     </div>
+  </div>
+</section>
+
+<!-- PROMO TREINAMENTO -->
+<section class="promo-treinamento-section">
+  <span class="promo-treinamento-badge">Nova Promoção</span>
+  <h2>Na compra do seu equipamento, você ganha um <em>treinamento completo</em> de como usar</h2>
+  <p class="lead">Muitos profissionais utilizam apenas uma pequena parte dos recursos disponíveis no equipamento. Aprenda a explorar todo o potencial do seu Autel com nosso treinamento especializado.</p>
+  <img src="./banner-treinamento.jpg" alt="Promoção: treinamento gratuito na compra do equipamento Autel" />
+  <div>
+    <a href="https://wa.me/5541999934500?text=Olá,%20quero%20saber%20mais%20sobre%20a%20promoção%20do%20treinamento!" target="_blank" class="btn-primary">
+      Quero essa promoção
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
   </div>
 </section>
 
@@ -719,29 +789,29 @@
 
   <div class="pain-cards">
     <div class="pain-card">
-      <div class="pain-icon">⏱️</div>
+      <div class="pain-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
       <h3>Horas perdidas tentando achar a falha</h3>
       <p>Sem um scanner profissional, você gasta o dobro do tempo num problema que o equipamento certo resolve em minutos.</p>
     </div>
     <div class="pain-card">
-      <div class="pain-icon">💸</div>
+      <div class="pain-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M6 9v.01M18 15v.01"/></svg></div>
       <h3>Peça trocada errada = prejuízo no bolso</h3>
       <p>Diagnóstico impreciso gera retrabalho, devolução e cliente insatisfeito. Cada erro custa mais do que o equipamento.</p>
     </div>
     <div class="pain-card">
-      <div class="pain-icon">🚗</div>
+      <div class="pain-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l1.2-4A2 2 0 016.1 7.5h9.8a2 2 0 011.9 1.5L19 13"/><rect x="2.5" y="13" width="17" height="5.5" rx="2"/><circle cx="7" cy="18.5" r="1.3"/><circle cx="15" cy="18.5" r="1.3"/></svg></div>
       <h3>Cliente indo embora sem resolver</h3>
       <p>Quando você não consegue diagnosticar com certeza, o cliente busca outra oficina — e raramente volta.</p>
     </div>
     <div class="pain-card">
-      <div class="pain-icon">📉</div>
+      <div class="pain-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l7 7 4-4 7 7"/><path d="M21 11v6h-6"/></svg></div>
       <h3>Concorrência te engolindo</h3>
       <p>Quem tem tecnologia Autel fecha serviços mais rápido, cobra mais e fideliza o cliente. Ficar para trás é uma escolha.</p>
     </div>
   </div>
 
   <div class="pain-solution" style="margin-top: 56px;">
-    <div class="pain-solution-icon">⚡</div>
+    <div class="pain-solution-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
     <div>
       <h3>A solução já existe — e cabe no seu orçamento</h3>
       <p>Os equipamentos Autel que antes eram privilégio de grandes redes chegaram até você, com suporte técnico AMG, garantia oficial e parcelas que cabem no orçamento. O diagnóstico preciso que você sempre quis — agora ao alcance da sua oficina.</p>
@@ -1000,22 +1070,22 @@
   <p class="section-sub">Desde 2017 em Curitiba/PR, a AMG é referência em equipamentos Autel: garantia oficial, suporte técnico e parcelamento facilitado.</p>
   <div class="garantias-grid">
     <div class="garantia-card">
-      <div class="garantia-icon">🏆</div>
+      <div class="garantia-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M9 13.5L7 22l5-3 5 3-2-8.5"/></svg></div>
       <h3>Revendedor Autorizado</h3>
       <p>Equipamentos originais Autel com nota fiscal e procedência garantida.</p>
     </div>
     <div class="garantia-card">
-      <div class="garantia-icon">🛡️</div>
-      <h3>Garantia + Atualizações</h3>
-      <p>1 ano de garantia de fábrica e 3 anos de atualizações inclusas em toda a linha Autel.</p>
+      <div class="garantia-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
+      <h3>Garantia de Fábrica</h3>
+      <p>1 ano de garantia de fábrica em toda a linha Autel.</p>
     </div>
     <div class="garantia-card">
-      <div class="garantia-icon">🎧</div>
+      <div class="garantia-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0116 0v1"/><rect x="2" y="13" width="5" height="7" rx="2"/><rect x="17" y="13" width="5" height="7" rx="2"/></svg></div>
       <h3>Suporte Especializado</h3>
       <p>Time treinado para te orientar antes, durante e depois da compra. Atendimento pelo WhatsApp.</p>
     </div>
     <div class="garantia-card">
-      <div class="garantia-icon">💳</div>
+      <div class="garantia-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></svg></div>
       <h3>Até 12x sem juros</h3>
       <p>Parcele em até 12x sem juros no cartão de crédito. Condições facilitadas para sua oficina.</p>
     </div>
